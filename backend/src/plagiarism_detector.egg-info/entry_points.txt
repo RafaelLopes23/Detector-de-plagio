@@ -1,0 +1,2 @@
+[console_scripts]
+plagiarism-detector = plagiarism_detector.cli:main

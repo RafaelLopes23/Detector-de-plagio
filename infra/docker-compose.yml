@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_DEBUG=0
+      - HOST=0.0.0.0
+      - PORT=5000
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - RAILS_ENV=production
+      - RACK_ENV=production
+      - PORT=3000
+      - WEB_CONCURRENCY=1
+      - RAILS_MAX_THREADS=2
+      - RAILS_SERVE_STATIC_FILES=true
+      - SECRET_KEY_BASE=please-change-me
+      - PLAGIARISM_API_URL=http://backend:5000/api/compare
+
+networks:
+  default:
+    driver: bridge

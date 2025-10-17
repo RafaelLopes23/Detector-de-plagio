@@ -1,0 +1,75 @@
+<h1>Detector de Plágio</h1>
+
+<p class="lead">Cole dois textos para calcular a similaridade e verificar possível plágio.</p>
+
+<% if flash[:alert] %>
+  <div class="flash flash-alert"><%= flash[:alert] %></div>
+<% end %>
+
+<%= form_with url: compare_texts_path, scope: :submission, method: :post, local: true do |form| %>
+  <div class="form-group">
+    <%= form.label :text_a, 'Texto de Referência (cole abaixo ou envie arquivo)' %>
+    <%= form.text_area :text_a, rows: 8, value: (@text_a || '') %>
+    <div style="margin-top: 0.5rem;">
+      <%= form.file_field :file_a, accept: '.txt,.md,.csv,.json,.html,.rst,.tex,.pdf' %>
+      <% if defined?(@a_from_file) && @a_from_file %>
+        <small>(Conteúdo anterior veio de arquivo)</small>
+      <% end %>
+      <small>Arquivos suportados: texto simples. PDFs funcionarão apenas se forem texto selecionável (não imagem).</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :text_b, 'Texto para Análise (cole abaixo ou envie arquivo)' %>
+    <%= form.text_area :text_b, rows: 8, value: (@text_b || '') %>
+    <div style="margin-top: 0.5rem;">
+      <%= form.file_field :file_b, accept: '.txt,.md,.csv,.json,.html,.rst,.tex,.pdf' %>
+      <% if defined?(@b_from_file) && @b_from_file %>
+        <small>(Conteúdo anterior veio de arquivo)</small>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <fieldset style="margin-bottom: 1rem;">
+      <legend>Parâmetros (TF‑IDF)</legend>
+      <div class="form-group">
+        <label for="submission_analyzer">Analisador</label>
+        <select name="submission[analyzer]" id="submission_analyzer">
+          <option value="char" <%= @analyzer == 'char' ? 'selected' : '' %>>Char n-grams (3–5)</option>
+          <option value="word" <%= (@analyzer.nil? || @analyzer == 'word') ? 'selected' : '' %>>Word n-grams</option>
+        </select>
+        <div id="analyzer_help" class="help" style="margin-top: .25rem;"></div>
+      </div>
+      <div class="form-group">
+        <label for="submission_ngram_min">n-gram min</label>
+        <input type="number" id="submission_ngram_min" name="submission[ngram_min]" value="<%= @ngram_min || 1 %>" min="1" style="width: 6rem;" />
+        <label for="submission_ngram_max" style="margin-left: 0.5rem;">n-gram max</label>
+        <input type="number" id="submission_ngram_max" name="submission[ngram_max]" value="<%= @ngram_max || 2 %>" min="1" style="width: 6rem;" />
+      </div>
+    </fieldset>
+    <%= form.submit 'Comparar Textos' %>
+  </div>
+<% end %>
+
+<script>
+  (function() {
+    function setHelp() {
+      var sel = document.getElementById('submission_analyzer');
+      var help = document.getElementById('analyzer_help');
+      if (!sel || !help) return;
+      if (sel.value === 'word') {
+        help.textContent = 'TF‑IDF com n‑grams de palavras (ex.: 1–2) foca em termos e pares de palavras. Mais conservador, tende a reduzir falsos positivos, mas é menos sensível a paráfrases.';
+      } else {
+        help.textContent = 'TF‑IDF com n‑grams de caracteres (ex.: 3–5) captura variações sutis e reordenações, detectando paráfrases com maior sensibilidade. Pode aumentar a similaridade em textos parcialmente parecidos.';
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      var sel = document.getElementById('submission_analyzer');
+      if (sel) {
+        setHelp();
+        sel.addEventListener('change', setHelp);
+      }
+    });
+  })();
+</script>

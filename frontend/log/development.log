@@ -1,0 +1,694 @@
+[7b3e60fe-06dd-463c-b752-7815b44f12cf] Started GET "/" for 127.0.0.1 at 2025-10-15 16:42:29 -0300
+[7b3e60fe-06dd-463c-b752-7815b44f12cf] Processing by SubmissionsController#new as HTML
+[7b3e60fe-06dd-463c-b752-7815b44f12cf]   Rendering layout layouts/application.html.erb
+[7b3e60fe-06dd-463c-b752-7815b44f12cf]   Rendering submissions/new.html.erb within layouts/application
+[7b3e60fe-06dd-463c-b752-7815b44f12cf]   Rendered submissions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2602)
+[7b3e60fe-06dd-463c-b752-7815b44f12cf]   Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 7741)
+[7b3e60fe-06dd-463c-b752-7815b44f12cf] Completed 500 Internal Server Error in 14ms (Allocations: 9422)
+
+
+[7b3e60fe-06dd-463c-b752-7815b44f12cf]   
+[7b3e60fe-06dd-463c-b752-7815b44f12cf] ActionView::Template::Error (link_tree argument must be a directory):
+[7b3e60fe-06dd-463c-b752-7815b44f12cf]   
+[7b3e60fe-06dd-463c-b752-7815b44f12cf] app/assets/config/manifest.js:1
+[4aa65782-7d83-4a36-a466-86582a339e0d] Started GET "/favicon.ico" for 127.0.0.1 at 2025-10-15 16:42:29 -0300
+[4aa65782-7d83-4a36-a466-86582a339e0d]   
+[4aa65782-7d83-4a36-a466-86582a339e0d] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[4aa65782-7d83-4a36-a466-86582a339e0d]   
+[c5444e95-ed50-4d96-8c6d-a620da96eb02] Started GET "/" for 127.0.0.1 at 2025-10-15 16:43:58 -0300
+[c5444e95-ed50-4d96-8c6d-a620da96eb02] Processing by SubmissionsController#new as HTML
+[c5444e95-ed50-4d96-8c6d-a620da96eb02]   Rendering layout layouts/application.html.erb
+[c5444e95-ed50-4d96-8c6d-a620da96eb02]   Rendering submissions/new.html.erb within layouts/application
+[c5444e95-ed50-4d96-8c6d-a620da96eb02]   Rendered submissions/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2602)
+[c5444e95-ed50-4d96-8c6d-a620da96eb02]   Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 9016)
+[c5444e95-ed50-4d96-8c6d-a620da96eb02] Completed 200 OK in 17ms (Views: 15.4ms | Allocations: 10753)
+
+
+[6c7ecc85-1ea5-4e27-be7a-be1594966309] Started POST "/compare" for 127.0.0.1 at 2025-10-15 16:45:26 -0300
+[6c7ecc85-1ea5-4e27-be7a-be1594966309] Processing by SubmissionsController#create as HTML
+[6c7ecc85-1ea5-4e27-be7a-be1594966309]   Parameters: {"authenticity_token" => "MZyqplUza7yiiJxk-xDV_o54wNxhtkeuf9eXhL5W8Rpn76qNggTI40eHsHE2cGqumf7YPsBuMWjjpql2NgzxCw", "submission" => {"text_a" => "A detecção de plágio em trabalhos acadêmicos é um desafio constante na educação e na pesquisa. Muitos estudantes reutilizam trechos de texto sem citação adequada, o que prejudica a ética e a integridade acadêmica. Ferramentas de comparação analisam semelhanças entre documentos, medindo tokens e identificando sobreposições de palavras. Um método simples é a similaridade de Jaccard, que calcula a razão entre a interseção e a união dos conjuntos de termos. Embora técnicas mais avançadas usem processamento de linguagem natural, lematização e modelos de linguagem, abordagens básicas já ajudam a conscientizar. O objetivo principal não é punir, mas orientar boas práticas de escrita, citação e propriedade intelectual. Ao mostrar onde há coincidências, professores e estudantes podem revisar o texto, melhorar a originalidade e compreender os limites do uso de fontes. Assim, a detecção de plágio contribui para a formação ética, a qualidade da produção acadêmica e o respeito ao trabalho intelectual.", "text_b" => "A detecção de plágio em trabalhos de pesquisa e na educação continua sendo um desafio relevante. Quando estudantes reutilizam trechos de texto sem a citação adequada, há impacto direto na ética e na integridade acadêmica. Ferramentas de comparação medem semelhanças entre documentos ao analisar tokens e a sobreposição de palavras. A similaridade de Jaccard, por exemplo, utiliza a razão entre a interseção e a união dos conjuntos de termos. Mesmo que soluções mais avançadas empreguem processamento de linguagem natural, lematização e modelos de linguagem, abordagens básicas já promovem conscientização. O objetivo essencial não é punir, e sim orientar boas práticas de escrita, citação e propriedade intelectual. Ao evidenciar coincidências, professores e estudantes conseguem revisar o conteúdo, aprimorar a originalidade e entender os limites no uso de fontes. Desse modo, a detecção de plágio fortalece a formação ética, a qualidade dos trabalhos acadêmicos e o respeito ao trabalho intelectual."}, "commit" => "Comparar Textos"}
+[6c7ecc85-1ea5-4e27-be7a-be1594966309]   Rendering layout layouts/application.html.erb
+[6c7ecc85-1ea5-4e27-be7a-be1594966309]   Rendering submissions/result.html.erb within layouts/application
+[6c7ecc85-1ea5-4e27-be7a-be1594966309]   Rendered submissions/result.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2761)
+[6c7ecc85-1ea5-4e27-be7a-be1594966309]   Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3726)
+[6c7ecc85-1ea5-4e27-be7a-be1594966309] Completed 200 OK in 9ms (Views: 6.1ms | Allocations: 5001)
+
+
+[0f9d1606-046c-492b-9ab2-745fd9e36e59] Started GET "/" for 127.0.0.1 at 2025-10-15 16:47:14 -0300
+[0f9d1606-046c-492b-9ab2-745fd9e36e59] Processing by SubmissionsController#new as HTML
+[0f9d1606-046c-492b-9ab2-745fd9e36e59]   Rendering layout layouts/application.html.erb
+[0f9d1606-046c-492b-9ab2-745fd9e36e59]   Rendering submissions/new.html.erb within layouts/application
+[0f9d1606-046c-492b-9ab2-745fd9e36e59]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 564)
+[0f9d1606-046c-492b-9ab2-745fd9e36e59]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1529)
+[0f9d1606-046c-492b-9ab2-745fd9e36e59] Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 1748)
+
+
+[03879136-9d21-4e00-9784-e90db6d12fdf] Started GET "/" for 127.0.0.1 at 2025-10-15 16:47:31 -0300
+[03879136-9d21-4e00-9784-e90db6d12fdf] Processing by SubmissionsController#new as HTML
+[03879136-9d21-4e00-9784-e90db6d12fdf]   Rendering layout layouts/application.html.erb
+[03879136-9d21-4e00-9784-e90db6d12fdf]   Rendering submissions/new.html.erb within layouts/application
+[03879136-9d21-4e00-9784-e90db6d12fdf]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 566)
+[03879136-9d21-4e00-9784-e90db6d12fdf]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1530)
+[03879136-9d21-4e00-9784-e90db6d12fdf] Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 1746)
+
+
+[7e772c6f-3479-4908-aaae-55be7fcb33f7] Started POST "/compare" for 127.0.0.1 at 2025-10-15 16:47:47 -0300
+[7e772c6f-3479-4908-aaae-55be7fcb33f7] Processing by SubmissionsController#create as HTML
+[7e772c6f-3479-4908-aaae-55be7fcb33f7]   Parameters: {"authenticity_token" => "wiGCUXjN3arnwxVkAMtfuYAmv835jCCkWXfVjo3BBF6UUoJ6r_p-9QLMOXHNq-Dpl6CnL1hUVmLFBut8BZsETw", "submission" => {"text_a" => "A detecção de plágio em trabalhos acadêmicos é um desafio constante na educação e na pesquisa. Muitos estudantes reutilizam trechos de texto sem citação adequada, o que prejudica a ética e a integridade acadêmica. Ferramentas de comparação analisam semelhanças entre documentos, medindo tokens e identificando sobreposições de palavras. Um método simples é a similaridade de Jaccard, que calcula a razão entre a interseção e a união dos conjuntos de termos. Embora técnicas mais avançadas usem processamento de linguagem natural, lematização e modelos de linguagem, abordagens básicas já ajudam a conscientizar. O objetivo principal não é punir, mas orientar boas práticas de escrita, citação e propriedade intelectual. Ao mostrar onde há coincidências, professores e estudantes podem revisar o texto, melhorar a originalidade e compreender os limites do uso de fontes. Assim, a detecção de plágio contribui para a formação ética, a qualidade da produção acadêmica e o respeito ao trabalho intelectual.", "text_b" => "A detecção de plágio em trabalhos de pesquisa e na educação continua sendo um desafio relevante. Quando estudantes reutilizam trechos de texto sem a citação adequada, há impacto direto na ética e na integridade acadêmica. Ferramentas de comparação medem semelhanças entre documentos ao analisar tokens e a sobreposição de palavras. A similaridade de Jaccard, por exemplo, utiliza a razão entre a interseção e a união dos conjuntos de termos. Mesmo que soluções mais avançadas empreguem processamento de linguagem natural, lematização e modelos de linguagem, abordagens básicas já promovem conscientização. O objetivo essencial não é punir, e sim orientar boas práticas de escrita, citação e propriedade intelectual. Ao evidenciar coincidências, professores e estudantes conseguem revisar o conteúdo, aprimorar a originalidade e entender os limites no uso de fontes. Desse modo, a detecção de plágio fortalece a formação ética, a qualidade dos trabalhos acadêmicos e o respeito ao trabalho intelectual."}, "commit" => "Comparar Textos"}
+[7e772c6f-3479-4908-aaae-55be7fcb33f7]   Rendering layout layouts/application.html.erb
+[7e772c6f-3479-4908-aaae-55be7fcb33f7]   Rendering submissions/result.html.erb within layouts/application
+[7e772c6f-3479-4908-aaae-55be7fcb33f7]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 129)
+[7e772c6f-3479-4908-aaae-55be7fcb33f7]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1094)
+[7e772c6f-3479-4908-aaae-55be7fcb33f7] Completed 200 OK in 4ms (Views: 1.7ms | Allocations: 1838)
+
+
+[42c4309d-1ac0-44bb-94dd-c79f96922164] Started GET "/" for 127.0.0.1 at 2025-10-15 16:56:34 -0300
+[42c4309d-1ac0-44bb-94dd-c79f96922164] Processing by SubmissionsController#new as HTML
+[42c4309d-1ac0-44bb-94dd-c79f96922164]   Rendering layout layouts/application.html.erb
+[42c4309d-1ac0-44bb-94dd-c79f96922164]   Rendering submissions/new.html.erb within layouts/application
+[42c4309d-1ac0-44bb-94dd-c79f96922164]   Rendered submissions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3055)
+[42c4309d-1ac0-44bb-94dd-c79f96922164]   Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 9516)
+[42c4309d-1ac0-44bb-94dd-c79f96922164] Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 11245)
+
+
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e] Started POST "/compare" for 127.0.0.1 at 2025-10-15 16:58:17 -0300
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e] Processing by SubmissionsController#create as HTML
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e]   Parameters: {"authenticity_token" => "miQO8bozXRv3n9tDB2p6AuE3VTjoy8F-pzABEgQ1BOXMVw7abQT-RBKQ91bKCsVS9rFN2kkTt7g7QT_gjG8E9A", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual."}, "commit" => "Comparar Textos"}
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e]   Rendering layout layouts/application.html.erb
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e]   Rendering submissions/result.html.erb within layouts/application
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.6ms | Allocations: 414)
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1645)
+[86fc3390-9e4e-47e1-8a2e-f604b73e209e] Completed 200 OK in 5ms (Views: 2.5ms | Allocations: 3088)
+
+
+[d021872a-138f-4c45-8a86-ccebaea018d4] Started GET "/" for 127.0.0.1 at 2025-10-15 16:59:00 -0300
+[d021872a-138f-4c45-8a86-ccebaea018d4] Processing by SubmissionsController#new as HTML
+[d021872a-138f-4c45-8a86-ccebaea018d4]   Rendering layout layouts/application.html.erb
+[d021872a-138f-4c45-8a86-ccebaea018d4]   Rendering submissions/new.html.erb within layouts/application
+[d021872a-138f-4c45-8a86-ccebaea018d4]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 717)
+[d021872a-138f-4c45-8a86-ccebaea018d4]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1680)
+[d021872a-138f-4c45-8a86-ccebaea018d4] Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 1900)
+
+
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6] Started POST "/compare" for 127.0.0.1 at 2025-10-15 16:59:05 -0300
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6] Processing by SubmissionsController#create as HTML
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6]   Parameters: {"authenticity_token" => "__q6P8qyQVBaw8i_Nik8-Px_JC7wvG-iW4dHJcQQbmapiboUHYXiD7_M5Kr7SYOo6_k8zFFkGWTH9nnXTEpudw", "submission" => {"text_a" => "A migração de aves costeiras depende de rotas estáveis, disponibilidade de alimento e ausência de perturbações humanas. Estudos de campo utilizam anilhamento, GPS e observação longitudinal para correlacionar mudanças climáticas com alterações de trajeto. Resultados indicam que pequenas variações de temperatura impactam períodos de reprodução e padrões de descanso.", "text_b" => "A configuração de um servidor web seguro envolve provisionamento da máquina, instalação do Nginx e obtenção de certificados TLS com o Let’s Encrypt. Boas práticas incluem firewall mínimo necessário, atualizações automáticas e monitoramento de logs. Testes de carga ajudam a estimar limites de throughput e a planejar escalabilidade horizontal."}, "commit" => "Comparar Textos"}
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6]   Rendering layout layouts/application.html.erb
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6]   Rendering submissions/result.html.erb within layouts/application
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6]   Rendered submissions/result.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2864)
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6]   Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3826)
+[0a9cc70b-8c10-4d0d-a576-009d2a2e0ab6] Completed 200 OK in 8ms (Views: 6.2ms | Allocations: 5059)
+
+
+[ba61da65-e273-4384-944c-cff193bece78] Started GET "/" for 127.0.0.1 at 2025-10-15 17:10:04 -0300
+[ba61da65-e273-4384-944c-cff193bece78] Processing by SubmissionsController#new as HTML
+[ba61da65-e273-4384-944c-cff193bece78]   Rendering layout layouts/application.html.erb
+[ba61da65-e273-4384-944c-cff193bece78]   Rendering submissions/new.html.erb within layouts/application
+[ba61da65-e273-4384-944c-cff193bece78]   Rendered submissions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3056)
+[ba61da65-e273-4384-944c-cff193bece78]   Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6103)
+[ba61da65-e273-4384-944c-cff193bece78] Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 7840)
+
+
+[acb4817d-1048-481c-89bb-dc5bb9f50894] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:10:25 -0300
+[acb4817d-1048-481c-89bb-dc5bb9f50894] Processing by SubmissionsController#create as HTML
+[acb4817d-1048-481c-89bb-dc5bb9f50894]   Parameters: {"authenticity_token" => "8gp3oaSw_XNz1Wn036KHD9mHzMlz_YtzbIrkiBB9MlmkeXeKc4deLJbaReESwjhfzgHUK9Il_bXw-9p6mCcySA", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual."}, "commit" => "Comparar Textos"}
+[acb4817d-1048-481c-89bb-dc5bb9f50894]   Rendering layout layouts/application.html.erb
+[acb4817d-1048-481c-89bb-dc5bb9f50894]   Rendering submissions/result.html.erb within layouts/application
+[acb4817d-1048-481c-89bb-dc5bb9f50894]   Rendered submissions/result.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3185)
+[acb4817d-1048-481c-89bb-dc5bb9f50894]   Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6245)
+[acb4817d-1048-481c-89bb-dc5bb9f50894] Completed 200 OK in 26ms (Views: 12.2ms | Allocations: 9182)
+
+
+[8c1cc6ad-3f29-4760-9dff-694d206c621b] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:28:44 -0300
+[8c1cc6ad-3f29-4760-9dff-694d206c621b] Processing by SubmissionsController#create as HTML
+[8c1cc6ad-3f29-4760-9dff-694d206c621b]   Parameters: {"authenticity_token" => "8gp3oaSw_XNz1Wn036KHD9mHzMlz_YtzbIrkiBB9MlmkeXeKc4deLJbaReESwjhfzgHUK9Il_bXw-9p6mCcySA", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual."}, "commit" => "Comparar Textos"}
+[8c1cc6ad-3f29-4760-9dff-694d206c621b]   Rendering layout layouts/application.html.erb
+[8c1cc6ad-3f29-4760-9dff-694d206c621b]   Rendering submissions/result.html.erb within layouts/application
+[8c1cc6ad-3f29-4760-9dff-694d206c621b]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.7ms | Allocations: 474)
+[8c1cc6ad-3f29-4760-9dff-694d206c621b]   Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1582)
+[8c1cc6ad-3f29-4760-9dff-694d206c621b] Completed 200 OK in 9ms (Views: 2.6ms | Allocations: 3102)
+
+
+[eb248801-01c0-477e-ba86-786f29d84257] Started GET "/" for 127.0.0.1 at 2025-10-15 17:28:48 -0300
+[eb248801-01c0-477e-ba86-786f29d84257] Processing by SubmissionsController#new as HTML
+[eb248801-01c0-477e-ba86-786f29d84257]   Rendering layout layouts/application.html.erb
+[eb248801-01c0-477e-ba86-786f29d84257]   Rendering submissions/new.html.erb within layouts/application
+[eb248801-01c0-477e-ba86-786f29d84257]   Rendered submissions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2484)
+[eb248801-01c0-477e-ba86-786f29d84257]   Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3447)
+[eb248801-01c0-477e-ba86-786f29d84257] Completed 200 OK in 4ms (Views: 4.0ms | Allocations: 3816)
+
+
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:29:27 -0300
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5] Processing by SubmissionsController#create as HTML
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5]   Parameters: {"authenticity_token" => "g_3HYC8Y6FCE9qFmdgDOq0JlINNs3s-4zZL7YN3aAmvVjsdL-C9LD2H5jXO7YHH7VeM4Mc0GuX5R48WSVYACeg", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "word", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5]   Rendering layout layouts/application.html.erb
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5]   Rendering submissions/result.html.erb within layouts/application
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5]   Rendered submissions/result.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2954)
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5]   Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4062)
+[b7f43ad6-3238-4a0b-b094-8ec6cf1431b5] Completed 200 OK in 11ms (Views: 6.7ms | Allocations: 5890)
+
+
+[54de7388-bbf2-455a-9857-df347436c8d4] Started GET "/" for 127.0.0.1 at 2025-10-15 17:29:42 -0300
+[54de7388-bbf2-455a-9857-df347436c8d4] Processing by SubmissionsController#new as HTML
+[54de7388-bbf2-455a-9857-df347436c8d4]   Rendering layout layouts/application.html.erb
+[54de7388-bbf2-455a-9857-df347436c8d4]   Rendering submissions/new.html.erb within layouts/application
+[54de7388-bbf2-455a-9857-df347436c8d4]   Rendered submissions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 943)
+[54de7388-bbf2-455a-9857-df347436c8d4]   Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1906)
+[54de7388-bbf2-455a-9857-df347436c8d4] Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 2259)
+
+
+[ea15f21b-3d04-4f46-976f-0af21a2fa986] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:29:57 -0300
+[ea15f21b-3d04-4f46-976f-0af21a2fa986] Processing by SubmissionsController#create as HTML
+[ea15f21b-3d04-4f46-976f-0af21a2fa986]   Parameters: {"authenticity_token" => "dksMZ2OAJqC_fVhXLtVvg1AUb2AJ_8apQBHgiZW0JgkgOAxMtLeF_1pydELjtdDTR5J3gqgnsG_cYN57He4mGA", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[ea15f21b-3d04-4f46-976f-0af21a2fa986]   Rendering layout layouts/application.html.erb
+[ea15f21b-3d04-4f46-976f-0af21a2fa986]   Rendering submissions/result.html.erb within layouts/application
+[ea15f21b-3d04-4f46-976f-0af21a2fa986]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 179)
+[ea15f21b-3d04-4f46-976f-0af21a2fa986]   Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1141)
+[ea15f21b-3d04-4f46-976f-0af21a2fa986] Completed 200 OK in 7ms (Views: 1.5ms | Allocations: 1964)
+
+
+[ba9f98f7-b611-4985-8f91-6aa52415121f] Started GET "/" for 127.0.0.1 at 2025-10-15 17:30:09 -0300
+[ba9f98f7-b611-4985-8f91-6aa52415121f] Processing by SubmissionsController#new as HTML
+[ba9f98f7-b611-4985-8f91-6aa52415121f]   Rendering layout layouts/application.html.erb
+[ba9f98f7-b611-4985-8f91-6aa52415121f]   Rendering submissions/new.html.erb within layouts/application
+[ba9f98f7-b611-4985-8f91-6aa52415121f]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 690)
+[ba9f98f7-b611-4985-8f91-6aa52415121f]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1653)
+[ba9f98f7-b611-4985-8f91-6aa52415121f] Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 1871)
+
+
+[02c85247-2159-4689-819c-48622af14c07] Started GET "/" for 127.0.0.1 at 2025-10-15 17:32:56 -0300
+[02c85247-2159-4689-819c-48622af14c07] Processing by SubmissionsController#new as HTML
+[02c85247-2159-4689-819c-48622af14c07]   Rendering layout layouts/application.html.erb
+[02c85247-2159-4689-819c-48622af14c07]   Rendering submissions/new.html.erb within layouts/application
+[02c85247-2159-4689-819c-48622af14c07]   Rendered submissions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 965)
+[02c85247-2159-4689-819c-48622af14c07]   Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2065)
+[02c85247-2159-4689-819c-48622af14c07] Completed 200 OK in 3ms (Views: 2.7ms | Allocations: 2845)
+
+
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:33:59 -0300
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d] Processing by SubmissionsController#create as HTML
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d]   Parameters: {"authenticity_token" => "Yo6DOh1hxg-np9JJyQGeNL-cYLrqFOZ2tzk4zsa2MU00_YMRylZlUEKo_lwEYSFkqBp4WEvMkLArSAY8TuwxXA", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d]   Rendering layout layouts/application.html.erb
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d]   Rendering submissions/result.html.erb within layouts/application
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.6ms | Allocations: 398)
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d]   Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1360)
+[6fd1b849-d8cc-4d46-9313-f4d4d95b224d] Completed 200 OK in 6ms (Views: 2.0ms | Allocations: 2334)
+
+
+[ab745938-a906-4a34-9da1-c94e8f377600] Started GET "/" for 127.0.0.1 at 2025-10-15 17:34:05 -0300
+[ab745938-a906-4a34-9da1-c94e8f377600] Processing by SubmissionsController#new as HTML
+[ab745938-a906-4a34-9da1-c94e8f377600]   Rendering layout layouts/application.html.erb
+[ab745938-a906-4a34-9da1-c94e8f377600]   Rendering submissions/new.html.erb within layouts/application
+[ab745938-a906-4a34-9da1-c94e8f377600]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 720)
+[ab745938-a906-4a34-9da1-c94e8f377600]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1682)
+[ab745938-a906-4a34-9da1-c94e8f377600] Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 1898)
+
+
+[e7c42c30-5773-4d98-8c30-a7ce2105f127] Started GET "/" for 127.0.0.1 at 2025-10-15 17:36:31 -0300
+[e7c42c30-5773-4d98-8c30-a7ce2105f127] Processing by SubmissionsController#new as HTML
+[e7c42c30-5773-4d98-8c30-a7ce2105f127]   Rendering layout layouts/application.html.erb
+[e7c42c30-5773-4d98-8c30-a7ce2105f127]   Rendering submissions/new.html.erb within layouts/application
+[e7c42c30-5773-4d98-8c30-a7ce2105f127]   Rendered submissions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 931)
+[e7c42c30-5773-4d98-8c30-a7ce2105f127]   Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2031)
+[e7c42c30-5773-4d98-8c30-a7ce2105f127] Completed 200 OK in 3ms (Views: 2.9ms | Allocations: 3041)
+
+
+[343814ba-8932-4c77-859d-45ea27a95a46] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:36:54 -0300
+[343814ba-8932-4c77-859d-45ea27a95a46] Processing by SubmissionsController#create as HTML
+[343814ba-8932-4c77-859d-45ea27a95a46]   Parameters: {"authenticity_token" => "NOf67JwnKi1RGMOYzpW2jWibGxRztUZKgYuAwX76j_ZilPrHSxCJcrQX740D9Qndfx0D9tJtMIwd-r4z9qCP5w", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[343814ba-8932-4c77-859d-45ea27a95a46]   Rendering layout layouts/application.html.erb
+[343814ba-8932-4c77-859d-45ea27a95a46]   Rendering submissions/result.html.erb within layouts/application
+[343814ba-8932-4c77-859d-45ea27a95a46]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.6ms | Allocations: 421)
+[343814ba-8932-4c77-859d-45ea27a95a46]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1528)
+[343814ba-8932-4c77-859d-45ea27a95a46] Completed 200 OK in 6ms (Views: 2.6ms | Allocations: 3019)
+
+
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:37:14 -0300
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f] Processing by SubmissionsController#create as HTML
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f]   Parameters: {"authenticity_token" => "NOf67JwnKi1RGMOYzpW2jWibGxRztUZKgYuAwX76j_ZilPrHSxCJcrQX740D9Qndfx0D9tJtMIwd-r4z9qCP5w", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f]   Rendering layout layouts/application.html.erb
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f]   Rendering submissions/result.html.erb within layouts/application
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 136)
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f]   Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1099)
+[0d940654-82af-4a74-9f9a-b8a3b7061b1f] Completed 200 OK in 4ms (Views: 1.3ms | Allocations: 2129)
+
+
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55] Started GET "/" for 127.0.0.1 at 2025-10-15 17:37:15 -0300
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55] Processing by SubmissionsController#new as HTML
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55]   Rendering layout layouts/application.html.erb
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55]   Rendering submissions/new.html.erb within layouts/application
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55]   Rendered submissions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 897)
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55]   Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1859)
+[ccb6510b-ee8b-4088-bf3d-5dc6cfc1dc55] Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 2592)
+
+
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:37:21 -0300
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3] Processing by SubmissionsController#create as HTML
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3]   Parameters: {"authenticity_token" => "mex3oLt7Ok_LQGjmQb4MiaesiBqy_3mm84s8fB9NorPPn3eLbEyZEC5PRPOM3rPZsCqQ-BMnD2Bv-gKOlxeiog", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "3"}, "commit" => "Comparar Textos"}
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3]   Rendering layout layouts/application.html.erb
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3]   Rendering submissions/result.html.erb within layouts/application
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 136)
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3]   Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1098)
+[8fc3eab7-7b8b-41ff-96b1-efa829c69ec3] Completed 200 OK in 5ms (Views: 1.4ms | Allocations: 2105)
+
+
+[a619c4fa-601f-48e3-b049-d39051bac42e] Started GET "/" for 127.0.0.1 at 2025-10-15 17:37:23 -0300
+[a619c4fa-601f-48e3-b049-d39051bac42e] Processing by SubmissionsController#new as HTML
+[a619c4fa-601f-48e3-b049-d39051bac42e]   Rendering layout layouts/application.html.erb
+[a619c4fa-601f-48e3-b049-d39051bac42e]   Rendering submissions/new.html.erb within layouts/application
+[a619c4fa-601f-48e3-b049-d39051bac42e]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 584)
+[a619c4fa-601f-48e3-b049-d39051bac42e]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1547)
+[a619c4fa-601f-48e3-b049-d39051bac42e] Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 2150)
+
+
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1] Started GET "/" for 127.0.0.1 at 2025-10-15 17:38:42 -0300
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1] Processing by SubmissionsController#new as HTML
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1]   Rendering layout layouts/application.html.erb
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1]   Rendering submissions/new.html.erb within layouts/application
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1]   Rendered submissions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 958)
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1]   Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2057)
+[7e9f6b38-6ff6-4d02-a470-a2b7af2d63a1] Completed 200 OK in 3ms (Views: 2.6ms | Allocations: 3197)
+
+
+[32cd5e0d-0951-4688-951b-cb2fdcb07486] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:38:58 -0300
+[32cd5e0d-0951-4688-951b-cb2fdcb07486] Processing by SubmissionsController#create as HTML
+[32cd5e0d-0951-4688-951b-cb2fdcb07486]   Parameters: {"authenticity_token" => "cwXM944Whm0j4TXc9oqSRukhGBf44kXjEuTPdzUrrFEldszcWSElMsbuGck76i0W_qcA9Vk6MyWOlfGFvXGsQA", "submission" => {"text_a" => "A propriedade intelectual protege criações originais em pesquisa, ciência e tecnologia. Em universidades, campanhas de conscientização orientam estudantes sobre citação adequada, integridade acadêmica e uso responsável de fontes. Ferramentas de comparação avaliam similaridade entre textos, destacando trechos coincidentes e incentivando a revisão. Ainda que métodos simples, como a similaridade de Jaccard, não capturem todos os casos, já ajudam a promover boas práticas de escrita e respeito ao trabalho intelectual.", "text_b" => "A proteção da propriedade intelectual envolve criações originais na ciência, tecnologia e pesquisa. Nas universidades, ações de conscientização informam estudantes sobre integridade acadêmica, citação correta e uso responsável de fontes. Ferramentas de comparação medem a similaridade entre textos, evidenciam trechos coincidentes e estimulam a revisão. Mesmo métodos básicos, como a similaridade de Jaccard, não resolvem todos os cenários, mas favorecem boas práticas de escrita e respeito ao trabalho intelectual.", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[32cd5e0d-0951-4688-951b-cb2fdcb07486]   Rendering layout layouts/application.html.erb
+[32cd5e0d-0951-4688-951b-cb2fdcb07486]   Rendering submissions/result.html.erb within layouts/application
+[32cd5e0d-0951-4688-951b-cb2fdcb07486]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.6ms | Allocations: 456)
+[32cd5e0d-0951-4688-951b-cb2fdcb07486]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1559)
+[32cd5e0d-0951-4688-951b-cb2fdcb07486] Completed 200 OK in 8ms (Views: 2.6ms | Allocations: 3230)
+
+
+[8db82400-dd16-48e9-bd52-351d0b663e37] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:39:58 -0300
+[8db82400-dd16-48e9-bd52-351d0b663e37] Processing by SubmissionsController#create as HTML
+[8db82400-dd16-48e9-bd52-351d0b663e37]   Parameters: {"authenticity_token" => "cwXM944Whm0j4TXc9oqSRukhGBf44kXjEuTPdzUrrFEldszcWSElMsbuGck76i0W_qcA9Vk6MyWOlfGFvXGsQA", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[8db82400-dd16-48e9-bd52-351d0b663e37]   Rendering layout layouts/application.html.erb
+[8db82400-dd16-48e9-bd52-351d0b663e37]   Rendering submissions/result.html.erb within layouts/application
+[8db82400-dd16-48e9-bd52-351d0b663e37]   Rendered submissions/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 163)
+[8db82400-dd16-48e9-bd52-351d0b663e37]   Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1125)
+[8db82400-dd16-48e9-bd52-351d0b663e37] Completed 200 OK in 6ms (Views: 1.4ms | Allocations: 2142)
+
+
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09] Started GET "/" for 127.0.0.1 at 2025-10-15 17:43:56 -0300
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09] Processing by SubmissionsController#new as HTML
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09]   Rendering layout layouts/application.html.erb
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09]   Rendering submissions/new.html.erb within layouts/application
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09]   Rendered submissions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 976)
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09]   Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3909)
+[fefa2bfe-05d4-4a3a-815f-5e35c27cae09] Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 5176)
+
+
+[532ce540-7400-41c0-83cb-7edb11aed373] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:44:20 -0300
+[532ce540-7400-41c0-83cb-7edb11aed373] Processing by SubmissionsController#create as HTML
+[532ce540-7400-41c0-83cb-7edb11aed373]   Parameters: {"authenticity_token" => "EIRcV-9TyybsrHBBpH24zCSoYWZaRQPQyCEwgz6sRedG91x8OGRoeQmjXFRpHQecMy55hPuddRZUUA5xtvZF9g", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[532ce540-7400-41c0-83cb-7edb11aed373]   Rendering layout layouts/application.html.erb
+[532ce540-7400-41c0-83cb-7edb11aed373]   Rendering submissions/result.html.erb within layouts/application
+[532ce540-7400-41c0-83cb-7edb11aed373]   Rendered submissions/result.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2544)
+[532ce540-7400-41c0-83cb-7edb11aed373]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3551)
+[532ce540-7400-41c0-83cb-7edb11aed373] Completed 200 OK in 18ms (Views: 4.1ms | Allocations: 5070)
+
+
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:46:14 -0300
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a] Processing by SubmissionsController#create as HTML
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a]   Parameters: {"authenticity_token" => "EIRcV-9TyybsrHBBpH24zCSoYWZaRQPQyCEwgz6sRedG91x8OGRoeQmjXFRpHQecMy55hPuddRZUUA5xtvZF9g", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a]   Rendering layout layouts/application.html.erb
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a]   Rendering submissions/result.html.erb within layouts/application
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a]   Rendered submissions/result.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2418)
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a]   Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3649)
+[9f7e72d9-b5ad-45d1-94eb-708c1d8d9d4a] Completed 200 OK in 21ms (Views: 9.9ms | Allocations: 5439)
+
+
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc] Started GET "/" for 127.0.0.1 at 2025-10-15 17:47:19 -0300
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc] Processing by SubmissionsController#new as HTML
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc]   Rendering layout layouts/application.html.erb
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc]   Rendering submissions/new.html.erb within layouts/application
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc]   Rendered submissions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 941)
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc]   Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1908)
+[9d4c8266-3eeb-49ce-8015-e1f8aaf2f7fc] Completed 200 OK in 10ms (Views: 6.7ms | Allocations: 2725)
+
+
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:47:24 -0300
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054] Processing by SubmissionsController#create as HTML
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054]   Parameters: {"authenticity_token" => "22noDm8KD5P2gPcSorvF5ceJr30YD1rLnP1y1ZESFd-NGugluD2szBOP2wdv23q10A-3n7nXLA0AjEwnGUgVzg", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054]   Rendering layout layouts/application.html.erb
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054]   Rendering submissions/result.html.erb within layouts/application
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1892)
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054]   Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2854)
+[b65b8c3c-70dc-4ad3-96fb-9de43e983054] Completed 200 OK in 8ms (Views: 2.6ms | Allocations: 3929)
+
+
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83] Started GET "/" for 127.0.0.1 at 2025-10-15 17:47:47 -0300
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83] Processing by SubmissionsController#new as HTML
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83]   Rendering layout layouts/application.html.erb
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83]   Rendering submissions/new.html.erb within layouts/application
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 584)
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83]   Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1546)
+[3703c7bd-1a4d-452b-ab54-5915c2ae3a83] Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2135)
+
+
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:47:50 -0300
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1] Processing by SubmissionsController#create as HTML
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1]   Parameters: {"authenticity_token" => "1iEe7rM0asoXhObNiR-Wp3AxWjR3n0Pe8DKNJLn9L0iAUh7FZAPJlfKLythEfyn3Z7dC1tZHNRhsQ7PWMacvWQ", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "3"}, "commit" => "Comparar Textos"}
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1]   Rendering layout layouts/application.html.erb
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1]   Rendering submissions/result.html.erb within layouts/application
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1736)
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2698)
+[5e092ba1-fcc9-4bcf-82c8-62eefb053ef1] Completed 200 OK in 8ms (Views: 2.7ms | Allocations: 3711)
+
+
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3] Started GET "/" for 127.0.0.1 at 2025-10-15 17:47:54 -0300
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3] Processing by SubmissionsController#new as HTML
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3]   Rendering layout layouts/application.html.erb
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3]   Rendering submissions/new.html.erb within layouts/application
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 584)
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3]   Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1546)
+[db929319-b5b9-4bd2-ac5f-23a3af9a92b3] Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 2171)
+
+
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:48:37 -0300
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2] Processing by SubmissionsController#create as HTML
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2]   Parameters: {"authenticity_token" => "Tp9Cj3YCiXoPXA4RmwbfCLhiY7wE6EGWwvrRkpDiBcwY7EKkoTUqJepTIgRWZmBYr-R7XqUwN1Bei-9gGLgF3Q", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "6"}, "commit" => "Comparar Textos"}
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2]   Rendering layout layouts/application.html.erb
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2]   Rendering submissions/result.html.erb within layouts/application
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1970)
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2932)
+[27cbad2a-fce5-43ee-b508-1911a5dbbba2] Completed 200 OK in 16ms (Views: 2.7ms | Allocations: 3997)
+
+
+[c3e96552-81b6-459e-b32e-5ac630f9add0] Started GET "/" for 127.0.0.1 at 2025-10-15 17:49:47 -0300
+[c3e96552-81b6-459e-b32e-5ac630f9add0] Processing by SubmissionsController#new as HTML
+[c3e96552-81b6-459e-b32e-5ac630f9add0]   Rendering layout layouts/application.html.erb
+[c3e96552-81b6-459e-b32e-5ac630f9add0]   Rendering submissions/new.html.erb within layouts/application
+[c3e96552-81b6-459e-b32e-5ac630f9add0]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 584)
+[c3e96552-81b6-459e-b32e-5ac630f9add0]   Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1546)
+[c3e96552-81b6-459e-b32e-5ac630f9add0] Completed 200 OK in 2ms (Views: 1.5ms | Allocations: 2102)
+
+
+[63eb0457-e277-4dde-a7d4-6a5928dafabb] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:49:59 -0300
+[63eb0457-e277-4dde-a7d4-6a5928dafabb] Processing by SubmissionsController#create as HTML
+[63eb0457-e277-4dde-a7d4-6a5928dafabb]   Parameters: {"authenticity_token" => "UbVJxTqd7pQJALnZ2GPb7UTgwPDGR3FVo6G0JFaY4PkHxknu7apNy-wPlcwVA2S9U2bYEmefB5M_0IrW3sLg6A", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "word", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[63eb0457-e277-4dde-a7d4-6a5928dafabb]   Rendering layout layouts/application.html.erb
+[63eb0457-e277-4dde-a7d4-6a5928dafabb]   Rendering submissions/result.html.erb within layouts/application
+[63eb0457-e277-4dde-a7d4-6a5928dafabb]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1736)
+[63eb0457-e277-4dde-a7d4-6a5928dafabb]   Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2698)
+[63eb0457-e277-4dde-a7d4-6a5928dafabb] Completed 200 OK in 9ms (Views: 2.5ms | Allocations: 3756)
+
+
+[268ab070-8a0e-400b-be5f-4f30d443e4e1] Started POST "/compare" for 127.0.0.1 at 2025-10-15 17:50:04 -0300
+[268ab070-8a0e-400b-be5f-4f30d443e4e1] Processing by SubmissionsController#create as HTML
+[268ab070-8a0e-400b-be5f-4f30d443e4e1]   Parameters: {"authenticity_token" => "UbVJxTqd7pQJALnZ2GPb7UTgwPDGR3FVo6G0JFaY4PkHxknu7apNy-wPlcwVA2S9U2bYEmefB5M_0IrW3sLg6A", "submission" => {"text_a" => "A integridade acadêmica depende de práticas transparentes de escrita e citação. Quando um texto reutiliza ideias ou trechos sem referência adequada, há risco de plágio e prejuízo ao aprendizado. Ferramentas de detecção comparam documentos para encontrar padrões repetidos, identificando sobreposição em expressões e sequências de caracteres. Embora nenhum método seja perfeito, o uso de n-grams de caracteres costuma capturar paráfrases leves, inversões de ordem e variações sutis. O objetivo é promover consciência, melhorar a originalidade e valorizar o trabalho intelectual.", "text_b" => "Práticas transparentes de citação e escrita sustentam a integridade acadêmica. Ao reutilizar trechos ou ideias sem a referência apropriada, o texto incorre em risco de plágio, afetando o processo de aprendizagem. Para identificar padrões repetidos, ferramentas de detecção comparam documentos e analisam sobreposições em sequências de caracteres e expressões. Apesar de não serem perfeitos, n-grams de caracteres tendem a detectar variações sutis, inversões de ordem e paráfrases leves. A finalidade é estimular consciência, valorizar o trabalho intelectual e elevar a originalidade.", "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[268ab070-8a0e-400b-be5f-4f30d443e4e1]   Rendering layout layouts/application.html.erb
+[268ab070-8a0e-400b-be5f-4f30d443e4e1]   Rendering submissions/result.html.erb within layouts/application
+[268ab070-8a0e-400b-be5f-4f30d443e4e1]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1892)
+[268ab070-8a0e-400b-be5f-4f30d443e4e1]   Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2854)
+[268ab070-8a0e-400b-be5f-4f30d443e4e1] Completed 200 OK in 9ms (Views: 3.4ms | Allocations: 3919)
+
+
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da] Started GET "/" for 127.0.0.1 at 2025-10-16 22:40:33 -0300
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da] Processing by SubmissionsController#new as HTML
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da]   Rendering layout layouts/application.html.erb
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da]   Rendering submissions/new.html.erb within layouts/application
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da]   Rendered submissions/new.html.erb within layouts/application (Duration: 20.2ms | Allocations: 2905)
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da]   Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 8254)
+[cd562aa6-552b-4c39-b225-e5b9fcb0f6da] Completed 200 OK in 36ms (Views: 31.6ms | Allocations: 10167)
+
+
+[cfaa457a-f7f3-4b36-8bb1-147e20d7c94d] Started GET "/favicon.ico" for 127.0.0.1 at 2025-10-16 22:40:33 -0300
+[cfaa457a-f7f3-4b36-8bb1-147e20d7c94d]   
+[cfaa457a-f7f3-4b36-8bb1-147e20d7c94d] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[cfaa457a-f7f3-4b36-8bb1-147e20d7c94d]   
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e] Started POST "/compare" for 127.0.0.1 at 2025-10-16 22:50:01 -0300
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e] Processing by SubmissionsController#create as HTML
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e]   Parameters: {"authenticity_token" => "BOojNtodGq4GcYpEiumm1R-XT8Ar8ioVDuma4ng4drqgafiSLxjRK6aTsLVg-WcYak6bbekck8AiOLK2TKa_Ug", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x000071ff767a6380 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-12134-qy0xsq.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x000071ff767a6290 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-12134-fmlzeg.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e] Completed 500 Internal Server Error in 4ms (Allocations: 1083)
+
+
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e]   
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e] ArgumentError (invalid byte sequence in UTF-8):
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e]   
+[efd34b34-f8f6-450d-a35f-cdbef609bd7e] app/controllers/submissions_controller.rb:27:in 'SubmissionsController#create'
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] Started POST "/compare" for 127.0.0.1 at 2025-10-16 22:54:52 -0300
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] Processing by SubmissionsController#create as HTML
+[9a82b38d-ebed-4d38-9491-f3b722ec040a]   Parameters: {"authenticity_token" => "BOojNtodGq4GcYpEiumm1R-XT8Ar8ioVDuma4ng4drqgafiSLxjRK6aTsLVg-WcYak6bbekck8AiOLK2TKa_Ug", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x000071ff5f3798f0 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-12139-czm6lw.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x000071ff5f3798a0 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-12139-2vwlxk.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] Completed 500 Internal Server Error in 1ms (Allocations: 810)
+
+
+[9a82b38d-ebed-4d38-9491-f3b722ec040a]   
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] LoadError (cannot load such file -- pdf/reader):
+[9a82b38d-ebed-4d38-9491-f3b722ec040a]   
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] app/controllers/submissions_controller.rb:98:in 'SubmissionsController#extract_pdf_text'
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] app/controllers/submissions_controller.rb:78:in 'SubmissionsController#extract_text'
+[9a82b38d-ebed-4d38-9491-f3b722ec040a] app/controllers/submissions_controller.rb:24:in 'SubmissionsController#create'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:01:53 -0300
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] Processing by SubmissionsController#create as HTML
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   Parameters: {"authenticity_token" => "BOojNtodGq4GcYpEiumm1R-XT8Ar8ioVDuma4ng4drqgafiSLxjRK6aTsLVg-WcYak6bbekck8AiOLK2TKa_Ug", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7fef9f0c98 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-kdrsag.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7fef9f0c48 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-s2mjp1.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   Rendering layout layouts/application.html.erb
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   Rendering submissions/result.html.erb within layouts/application
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   Rendered submissions/result.html.erb within layouts/application (Duration: 7.5ms | Allocations: 5260)
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8316)
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] Completed 200 OK in 2291ms (Views: 13.0ms | Allocations: 3821870)
+
+
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] ActionDispatch::Cookies::CookieOverflow (ActionDispatch::Cookies::CookieOverflow):
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8]   
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/cookies.rb:686:in 'ActionDispatch::Cookies::EncryptedKeyRotatingCookieJar#commit'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/cookies.rb:504:in 'ActionDispatch::Cookies::AbstractCookieJar#[]='
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/session/cookie_store.rb:110:in 'ActionDispatch::Session::CookieStore#set_cookie'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] rack (2.2.20) lib/rack/session/abstract/id.rb:403:in 'Rack::Session::Abstract::Persisted#commit_session'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] rack (2.2.20) lib/rack/session/abstract/id.rb:268:in 'Rack::Session::Abstract::Persisted#context'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] rack (2.2.20) lib/rack/session/abstract/id.rb:260:in 'Rack::Session::Abstract::Persisted#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/cookies.rb:697:in 'ActionDispatch::Cookies#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/callbacks.rb:27:in 'block in ActionDispatch::Callbacks#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] activesupport (6.1.7.10) lib/active_support/callbacks.rb:98:in 'ActiveSupport::Callbacks#run_callbacks'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/callbacks.rb:26:in 'ActionDispatch::Callbacks#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/executor.rb:14:in 'ActionDispatch::Executor#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/debug_exceptions.rb:29:in 'ActionDispatch::DebugExceptions#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/show_exceptions.rb:33:in 'ActionDispatch::ShowExceptions#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] railties (6.1.7.10) lib/rails/rack/logger.rb:37:in 'Rails::Rack::Logger#call_app'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] railties (6.1.7.10) lib/rails/rack/logger.rb:26:in 'block in Rails::Rack::Logger#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] activesupport (6.1.7.10) lib/active_support/tagged_logging.rb:99:in 'block in ActiveSupport::TaggedLogging#tagged'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] activesupport (6.1.7.10) lib/active_support/tagged_logging.rb:37:in 'ActiveSupport::TaggedLogging::Formatter#tagged'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] activesupport (6.1.7.10) lib/active_support/tagged_logging.rb:99:in 'ActiveSupport::TaggedLogging#tagged'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] railties (6.1.7.10) lib/rails/rack/logger.rb:26:in 'Rails::Rack::Logger#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in 'Sprockets::Rails::QuietAssets#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/remote_ip.rb:81:in 'ActionDispatch::RemoteIp#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/request_id.rb:26:in 'ActionDispatch::RequestId#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] rack (2.2.20) lib/rack/method_override.rb:24:in 'Rack::MethodOverride#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] rack (2.2.20) lib/rack/runtime.rb:22:in 'Rack::Runtime#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] activesupport (6.1.7.10) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/executor.rb:14:in 'ActionDispatch::Executor#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/static.rb:24:in 'ActionDispatch::Static#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] rack (2.2.20) lib/rack/sendfile.rb:127:in 'Rack::Sendfile#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] actionpack (6.1.7.10) lib/action_dispatch/middleware/host_authorization.rb:142:in 'ActionDispatch::HostAuthorization#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] railties (6.1.7.10) lib/rails/engine.rb:539:in 'Rails::Engine#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+[8abec996-10d2-4d3b-a132-b59abd8ee3a8] puma (6.6.1) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46] Started GET "/" for 127.0.0.1 at 2025-10-16 23:02:02 -0300
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46] Processing by SubmissionsController#new as HTML
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46]   Rendering layout layouts/application.html.erb
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46]   Rendering submissions/new.html.erb within layouts/application
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46]   Rendered submissions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2515)
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46]   Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3630)
+[d15a8d92-00ad-42c7-a5d7-4979292f2d46] Completed 200 OK in 6ms (Views: 5.5ms | Allocations: 4581)
+
+
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb] Started GET "/" for 127.0.0.1 at 2025-10-16 23:02:03 -0300
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb] Processing by SubmissionsController#new as HTML
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb]   Rendering layout layouts/application.html.erb
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb]   Rendering submissions/new.html.erb within layouts/application
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 583)
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb]   Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1546)
+[9b451f8b-9a2d-41fa-93cd-92d9bfcbbeeb] Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 1915)
+
+
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:02:20 -0300
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] Processing by SubmissionsController#create as HTML
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   Parameters: {"authenticity_token" => "1YPP988g-VhDzaX8pA1_F0HtmEtZppn80BcnpoaBEetxABRTOiUy3eMvnw1OHb7aNDRM5ptIICn8xg_ysh_YAw", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7feffa4018 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-vr6u21.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7feffa3f78 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-pqdhta.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   Rendering layout layouts/application.html.erb
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   Rendering submissions/result.html.erb within layouts/application
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2488)
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3464)
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] Completed 200 OK in 2184ms (Views: 3.3ms | Allocations: 3759715)
+
+
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] ActionDispatch::Cookies::CookieOverflow (ActionDispatch::Cookies::CookieOverflow):
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c]   
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/cookies.rb:686:in 'ActionDispatch::Cookies::EncryptedKeyRotatingCookieJar#commit'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/cookies.rb:504:in 'ActionDispatch::Cookies::AbstractCookieJar#[]='
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/session/cookie_store.rb:110:in 'ActionDispatch::Session::CookieStore#set_cookie'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] rack (2.2.20) lib/rack/session/abstract/id.rb:403:in 'Rack::Session::Abstract::Persisted#commit_session'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] rack (2.2.20) lib/rack/session/abstract/id.rb:268:in 'Rack::Session::Abstract::Persisted#context'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] rack (2.2.20) lib/rack/session/abstract/id.rb:260:in 'Rack::Session::Abstract::Persisted#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/cookies.rb:697:in 'ActionDispatch::Cookies#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/callbacks.rb:27:in 'block in ActionDispatch::Callbacks#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] activesupport (6.1.7.10) lib/active_support/callbacks.rb:98:in 'ActiveSupport::Callbacks#run_callbacks'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/callbacks.rb:26:in 'ActionDispatch::Callbacks#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/executor.rb:14:in 'ActionDispatch::Executor#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/debug_exceptions.rb:29:in 'ActionDispatch::DebugExceptions#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] web-console (4.2.1) lib/web_console/middleware.rb:132:in 'WebConsole::Middleware#call_app'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] web-console (4.2.1) lib/web_console/middleware.rb:28:in 'block in WebConsole::Middleware#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] web-console (4.2.1) lib/web_console/middleware.rb:17:in 'Kernel#catch'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] web-console (4.2.1) lib/web_console/middleware.rb:17:in 'WebConsole::Middleware#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/show_exceptions.rb:33:in 'ActionDispatch::ShowExceptions#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] railties (6.1.7.10) lib/rails/rack/logger.rb:37:in 'Rails::Rack::Logger#call_app'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] railties (6.1.7.10) lib/rails/rack/logger.rb:26:in 'block in Rails::Rack::Logger#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] activesupport (6.1.7.10) lib/active_support/tagged_logging.rb:99:in 'block in ActiveSupport::TaggedLogging#tagged'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] activesupport (6.1.7.10) lib/active_support/tagged_logging.rb:37:in 'ActiveSupport::TaggedLogging::Formatter#tagged'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] activesupport (6.1.7.10) lib/active_support/tagged_logging.rb:99:in 'ActiveSupport::TaggedLogging#tagged'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] railties (6.1.7.10) lib/rails/rack/logger.rb:26:in 'Rails::Rack::Logger#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in 'Sprockets::Rails::QuietAssets#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/remote_ip.rb:81:in 'ActionDispatch::RemoteIp#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/request_id.rb:26:in 'ActionDispatch::RequestId#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] rack (2.2.20) lib/rack/method_override.rb:24:in 'Rack::MethodOverride#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] rack (2.2.20) lib/rack/runtime.rb:22:in 'Rack::Runtime#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] activesupport (6.1.7.10) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/executor.rb:14:in 'ActionDispatch::Executor#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/static.rb:24:in 'ActionDispatch::Static#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] rack (2.2.20) lib/rack/sendfile.rb:127:in 'Rack::Sendfile#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] actionpack (6.1.7.10) lib/action_dispatch/middleware/host_authorization.rb:142:in 'ActionDispatch::HostAuthorization#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] railties (6.1.7.10) lib/rails/engine.rb:539:in 'Rails::Engine#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/configuration.rb:279:in 'Puma::Configuration::ConfigMiddleware#call'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/request.rb:99:in 'block in Puma::Request#handle_request'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/thread_pool.rb:390:in 'Puma::ThreadPool#with_force_shutdown'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/request.rb:98:in 'Puma::Request#handle_request'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/server.rb:472:in 'Puma::Server#process_client'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/server.rb:254:in 'block in Puma::Server#run'
+[82526e96-fab4-4cf3-a2b1-6e01ce9f9c1c] puma (6.6.1) lib/puma/thread_pool.rb:167:in 'block in Puma::ThreadPool#spawn_thread'
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1] Started GET "/" for 127.0.0.1 at 2025-10-16 23:06:56 -0300
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1] Processing by SubmissionsController#new as HTML
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1]   Rendering layout layouts/application.html.erb
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1]   Rendering submissions/new.html.erb within layouts/application
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 650)
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1]   Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1662)
+[fcfee23a-01a6-4fb6-8abc-de1add34c3c1] Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 2260)
+
+
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:08:12 -0300
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4] Processing by SubmissionsController#create as HTML
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4]   Parameters: {"authenticity_token" => "Is-BPeOpIVCcvi6L5X1J0QA4mWPyf18jafUD20YRxNuGTFqZFqzq1TxcFHoPbYgcdeFNzjCR5vZFJCuPco8NMw", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed723760 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-mb4osg.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed723710 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-smq9qb.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4]   Rendering layout layouts/application.html.erb
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4]   Rendering submissions/result.html.erb within layouts/application
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2138)
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3113)
+[0dac2cb0-b361-4eea-80d7-c95ce6c69dc4] Completed 200 OK in 2166ms (Views: 2.8ms | Allocations: 3759249)
+
+
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:09:15 -0300
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32] Processing by SubmissionsController#create as HTML
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32]   Parameters: {"authenticity_token" => "Is-BPeOpIVCcvi6L5X1J0QA4mWPyf18jafUD20YRxNuGTFqZFqzq1TxcFHoPbYgcdeFNzjCR5vZFJCuPco8NMw", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7ff08eec40 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17666-cdmps3.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7ff08eeab0 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17666-ossf4h.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32]   Rendering layout layouts/application.html.erb
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32]   Rendering submissions/result.html.erb within layouts/application
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32]   Rendered submissions/result.html.erb within layouts/application (Duration: 6.3ms | Allocations: 5260)
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32]   Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 8314)
+[83c1a4bb-71c2-461a-a771-6435d7f8fc32] Completed 200 OK in 1932ms (Views: 12.2ms | Allocations: 3821916)
+
+
+[25f645e0-2455-4e13-8420-4635b4196b1d] Started GET "/" for 127.0.0.1 at 2025-10-16 23:13:38 -0300
+[25f645e0-2455-4e13-8420-4635b4196b1d] Processing by SubmissionsController#new as HTML
+[25f645e0-2455-4e13-8420-4635b4196b1d]   Rendering layout layouts/application.html.erb
+[25f645e0-2455-4e13-8420-4635b4196b1d]   Rendering submissions/new.html.erb within layouts/application
+[25f645e0-2455-4e13-8420-4635b4196b1d]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 582)
+[25f645e0-2455-4e13-8420-4635b4196b1d]   Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1544)
+[25f645e0-2455-4e13-8420-4635b4196b1d] Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 1959)
+
+
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:13:49 -0300
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe] Processing by SubmissionsController#create as HTML
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe]   Parameters: {"authenticity_token" => "RnkdLohDdfJkXQFUW2Z6kRJ-3HyX7T3cqwRsP_NaXjvi-saKfUa-d8S_O6WxdrtcZ6cI0VUDhAmH1URrx8SX0w", "submission" => {"text_a" => "(conteúdo enviado via arquivo: IEEE_Conference_Template__2_.pdf)", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed704bf8 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-e2awur.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "(conteúdo enviado via arquivo: teste.pdf)", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed704b58 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-fwijft.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe]   Rendering layout layouts/application.html.erb
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe]   Rendering submissions/result.html.erb within layouts/application
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1414)
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe]   Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2376)
+[1d777194-f65f-452a-80b1-2b0cd5f43ebe] Completed 200 OK in 7ms (Views: 2.9ms | Allocations: 3256)
+
+
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:14:06 -0300
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf] Processing by SubmissionsController#create as HTML
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf]   Parameters: {"authenticity_token" => "RnkdLohDdfJkXQFUW2Z6kRJ-3HyX7T3cqwRsP_NaXjvi-saKfUa-d8S_O6WxdrtcZ6cI0VUDhAmH1URrx8SX0w", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed805f20 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-8aooy.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed805e30 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17673-a1l2w4.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "word", "ngram_min" => "1", "ngram_max" => "2"}, "commit" => "Comparar Textos"}
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf]   Rendering layout layouts/application.html.erb
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf]   Rendering submissions/result.html.erb within layouts/application
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2123)
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf]   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3098)
+[c7e3d237-ccad-426d-877c-eaacaec7b3bf] Completed 200 OK in 1886ms (Views: 2.9ms | Allocations: 3759204)
+
+
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc] Started GET "/" for 127.0.0.1 at 2025-10-16 23:14:49 -0300
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc] Processing by SubmissionsController#new as HTML
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc]   Rendering layout layouts/application.html.erb
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc]   Rendering submissions/new.html.erb within layouts/application
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 582)
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc]   Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1557)
+[b741e4c2-2d43-4ac7-a8cf-9dc00ffe0adc] Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 1955)
+
+
+[ed1ca132-9f55-4625-b545-e3402c26640d] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:14:55 -0300
+[ed1ca132-9f55-4625-b545-e3402c26640d] Processing by SubmissionsController#create as HTML
+[ed1ca132-9f55-4625-b545-e3402c26640d]   Parameters: {"authenticity_token" => "kkRl3-NQ1KfiQDJ1AxqtYbiJNjSNS_ZIrpeKAl0WF802x757FlUfIkKiCITpCmyszVDimU-lT52CRqJWaYjeJQ", "submission" => {"text_a" => "(conteúdo enviado via arquivo: IEEE_Conference_Template__2_.pdf)", "text_b" => "(conteúdo enviado via arquivo: teste.pdf)", "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[ed1ca132-9f55-4625-b545-e3402c26640d]   Rendering layout layouts/application.html.erb
+[ed1ca132-9f55-4625-b545-e3402c26640d]   Rendering submissions/result.html.erb within layouts/application
+[ed1ca132-9f55-4625-b545-e3402c26640d]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1734)
+[ed1ca132-9f55-4625-b545-e3402c26640d]   Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2696)
+[ed1ca132-9f55-4625-b545-e3402c26640d] Completed 200 OK in 7ms (Views: 2.9ms | Allocations: 3638)
+
+
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9] Started GET "/" for 127.0.0.1 at 2025-10-16 23:14:57 -0300
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9] Processing by SubmissionsController#new as HTML
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9]   Rendering layout layouts/application.html.erb
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9]   Rendering submissions/new.html.erb within layouts/application
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 580)
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1542)
+[04a8ad6a-de38-4c81-89a5-aea90687f0e9] Completed 200 OK in 2ms (Views: 1.7ms | Allocations: 1981)
+
+
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5] Started GET "/" for 127.0.0.1 at 2025-10-16 23:16:57 -0300
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5] Processing by SubmissionsController#new as HTML
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5]   Rendering layout layouts/application.html.erb
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5]   Rendering submissions/new.html.erb within layouts/application
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5]   Rendered submissions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2534)
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5]   Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3636)
+[9451d2e6-cba1-48f5-bb9f-a3311b15e7f5] Completed 200 OK in 5ms (Views: 4.5ms | Allocations: 4723)
+
+
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:17:48 -0300
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14] Processing by SubmissionsController#create as HTML
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14]   Parameters: {"authenticity_token" => "1dRDVB_sWma_fkt4o82sdcFnQxUrI800M5tcVdXQNDdxV5jw6umR4x-ccYlJ3W24tL6XuOnNdOEfSnQB4U793w", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed38ca48 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17666-t87ykw.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "(contedo enviado via arquivo: teste.pdf)", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7fed38c9f8 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17666-ypg0o8.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14]   Rendering layout layouts/application.html.erb
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14]   Rendering submissions/result.html.erb within layouts/application
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2071)
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14]   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3046)
+[d09c5f6a-a9e9-4085-a22a-f39e76963f14] Completed 200 OK in 1348ms (Views: 3.3ms | Allocations: 2482072)
+
+
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0] Started POST "/compare" for 127.0.0.1 at 2025-10-16 23:18:02 -0300
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0] Processing by SubmissionsController#create as HTML
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0]   Parameters: {"authenticity_token" => "1dRDVB_sWma_fkt4o82sdcFnQxUrI800M5tcVdXQNDdxV5jw6umR4x-ccYlJ3W24tL6XuOnNdOEfSnQB4U793w", "submission" => {"text_a" => "", "file_a" => #<ActionDispatch::Http::UploadedFile:0x00007e7fef6e7358 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17666-4navsa.pdf>, @original_filename="IEEE_Conference_Template__2_.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_a]\"; filename=\"IEEE_Conference_Template__2_.pdf\"\r\nContent-Type: application/pdf\r\n">, "text_b" => "", "file_b" => #<ActionDispatch::Http::UploadedFile:0x00007e7fef6e6868 @tempfile=#<Tempfile:/tmp/RackMultipart20251016-17666-s4f4xq.pdf>, @original_filename="teste.pdf", @content_type="application/pdf", @headers="Content-Disposition: form-data; name=\"submission[file_b]\"; filename=\"teste.pdf\"\r\nContent-Type: application/pdf\r\n">, "analyzer" => "char", "ngram_min" => "3", "ngram_max" => "5"}, "commit" => "Comparar Textos"}
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0]   Rendering layout layouts/application.html.erb
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0]   Rendering submissions/result.html.erb within layouts/application
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0]   Rendered submissions/result.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2123)
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0]   Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3099)
+[b6e14bf4-774d-4a86-817c-4a0f03e0a8b0] Completed 200 OK in 2178ms (Views: 3.4ms | Allocations: 3759203)
+
+
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968] Started GET "/" for 127.0.0.1 at 2025-10-16 23:18:11 -0300
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968] Processing by SubmissionsController#new as HTML
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968]   Rendering layout layouts/application.html.erb
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968]   Rendering submissions/new.html.erb within layouts/application
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968]   Rendered submissions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 581)
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968]   Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1544)
+[bb86d465-c9ae-4fe1-9ee5-8419dfc0b968] Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 1943)
+
+

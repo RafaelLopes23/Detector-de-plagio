@@ -1,0 +1,19 @@
+<h1>Submission Details</h1>
+
+<p>
+  <strong>Title:</strong> <%= @submission.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+</p>
+<pre><%= @submission.content %></pre>
+
+<p>
+  <strong>Plagiarism Report:</strong>
+</p>
+<pre><%= @submission.plagiarism_report %></pre>
+
+<p>
+  <a href="<%= submissions_path %>">Back to Submissions</a>
+</p>

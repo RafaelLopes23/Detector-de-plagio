@@ -1,0 +1,20 @@
+{
+  "name": "plagiarism-detector-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the Plagiarism Detector application built with Ruby on Rails.",
+  "main": "app/javascript/packs/application.js",
+  "scripts": {
+    "start": "rails server",
+    "build": "rails assets:precompile",
+    "test": "rspec"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "webpacker": "^5.4.3"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

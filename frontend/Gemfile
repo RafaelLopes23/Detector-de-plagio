@@ -1,0 +1,21 @@
+source 'https://rubygems.org'
+
+gem 'rails', '~> 6.1.7'
+gem 'puma', '~> 6.4'
+gem 'sprockets-rails', '~> 3.4'
+gem 'mutex_m', require: false
+gem 'bigdecimal', require: false
+gem 'benchmark', require: false
+gem 'pdf-reader', '~> 2.11'
+group :development, :test do
+  gem 'byebug'
+end
+
+group :development do
+  gem 'web-console', '>= 4.2.0'
+  gem 'listen', '~> 3.8'
+end
+
+group :test do
+  gem 'rspec-rails'
+end

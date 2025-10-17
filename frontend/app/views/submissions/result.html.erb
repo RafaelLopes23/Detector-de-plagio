@@ -1,0 +1,67 @@
+<h1>Resultado</h1>
+
+<p><strong>Similaridade:</strong> <%= number_to_percentage(@similarity * 100, precision: 2) %></p>
+<p><strong>Plágio detectado?</strong> <%= @is_plagiarism ? 'Sim' : 'Não' %></p>
+<% if @analyzer && @ngram_range %>
+  <p><strong>Método:</strong> TF‑IDF (<%= @analyzer %> n-grams <%= @ngram_range[0] %>–<%= @ngram_range[1] %>)</p>
+<% end %>
+
+<section class="results">
+  <article>
+    <h2>Texto de Referência</h2>
+    <pre><%= @text_a %></pre>
+  </article>
+  <article>
+    <h2>Texto Analisado</h2>
+    <pre><%= @text_b %></pre>
+  </article>
+</section>
+
+
+
+<% if @passages.present? %>
+  <h2>Passagens semelhantes (TF‑IDF por sentenças)</h2>
+  <ol class="matches">
+    <% @passages.each do |p| %>
+      <li>
+        <div class="match-meta">Similaridade da passagem: <%= number_to_percentage(p['similarity'] * 100, precision: 1) %></div>
+        <div class="match-blocks">
+          <div>
+            <h3>Sentença no Texto A</h3>
+            <pre><%= p['a_sentence'] %></pre>
+          </div>
+          <div>
+            <h3>Sentença no Texto B</h3>
+            <pre><%= p['b_sentence'] %></pre>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ol>
+<% end %>
+
+<% if @explanations.present? %>
+  <h2>Principais n‑grams que contribuíram</h2>
+  <table class="explain">
+    <thead>
+      <tr>
+        <th>n‑gram</th>
+        <th>Peso A</th>
+        <th>Peso B</th>
+        <th>Contribuição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @explanations.each do |e| %>
+        <tr>
+          <td><code><%= e['feature'] %></code></td>
+          <td><%= number_with_precision(e['weight_a'], precision: 3) %></td>
+          <td><%= number_with_precision(e['weight_b'], precision: 3) %></td>
+          <td><%= number_with_precision(e['contribution'], precision: 3) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+<%= link_to 'Comparar Novamente', root_path, class: 'button' %>

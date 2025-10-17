@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.dist/
+.build/
+.venv/
+venv/
+.cache/
+.git/
+**/__pycache__/
+**/*.pyc

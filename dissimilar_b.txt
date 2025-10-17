@@ -1,0 +1,11 @@
+Title: Compiler Optimizations: From SSA to Cache-Aware Scheduling
+
+Modern compilers orchestrate a sequence of transformations that reshape programs for performance and safety. Static single assignment (SSA) form underpins many optimizations, simplifying data-flow reasoning by ensuring each variable is defined exactly once. With SSA, analyses like constant propagation and dead code elimination become both more precise and tractable.
+
+Beyond SSA-based rewrites, instruction selection and register allocation are pivotal. Pattern matching maps intermediate representations to target-specific instructions, while graph-coloring allocators assign variables to scarce registers, minimizing spills to memory. Heuristics balance compile-time against code quality, informed by architectural traits.
+
+Cache-awareness has grown in importance. Loop transformations—tiling, fusion, and interchange—improve locality, reduce bandwidth pressure, and create opportunities for vectorization. Prefetching hints can mask memory latency, but excessive prefetches waste bandwidth; adaptive strategies consider stride patterns and reuse distances.
+
+The rise of heterogeneous systems introduces further complexity. Schedulers must decide when to offload work to GPUs, DSPs, or accelerators, accounting for transfer overhead and device occupancy. Intermediate representations increasingly encode parallel semantics, enabling backends to target multiple hardware domains without duplicating logic.
+
+Correctness remains paramount. Alias analyses constrain reordering; sanitizers and formal verification tools detect undefined behavior; and profile-guided optimization (PGO) grounds decisions in real workloads. Ultimately, the craft of optimization is navigating trade-offs—between compile time and runtime, portability and specialization, theoretical optima and practical constraints of real machines.

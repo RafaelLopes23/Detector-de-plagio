@@ -1,0 +1,15 @@
+pyproject.toml
+src/plagiarism_detector/__init__.py
+src/plagiarism_detector/api.py
+src/plagiarism_detector/cli.py
+src/plagiarism_detector/compare.py
+src/plagiarism_detector/data_loader.py
+src/plagiarism_detector/preprocessing.py
+src/plagiarism_detector.egg-info/PKG-INFO
+src/plagiarism_detector.egg-info/SOURCES.txt
+src/plagiarism_detector.egg-info/dependency_links.txt
+src/plagiarism_detector.egg-info/entry_points.txt
+src/plagiarism_detector.egg-info/requires.txt
+src/plagiarism_detector.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_compare.py

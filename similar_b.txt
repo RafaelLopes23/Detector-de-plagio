@@ -1,0 +1,13 @@
+Title: Real-Time ECG Monitoring: Opportunities and Challenges
+
+The landscape of cardiac surveillance has expanded beyond hospitals, now encompassing wearables and home devices. Progress in energy-efficient sensing, low-latency connectivity, and continuous ECG processing pipelines has enabled near-continuous observation. Meeting stringent timing for alerts—such as rapidly identifying lethal arrhythmias—requires both low latency and reliable detection metrics.
+
+Implementations commonly decompose into recurring tasks. Signal acquisition captures the ECG at regular sampling periods, alongside filters and anti-aliasing to curb noise. Subsequent stages compute salient features: R peaks, variability indicators, and waveform morphology. A decision block fuses these features using thresholds or compact machine-learning models to detect anomalies. Reporting components then deliver clinician-facing summaries and archive event streams.
+
+Timeliness is a first-class requirement: it is not enough that algorithms are correct; they must finish in time. Response-time analysis (RTA) gives upper bounds on worst-case response time (WCRT), incorporating CPU demand, blocking due to shared resources, and preemption by higher-priority activities. Despite comfortable averages, bursts, cache behavior, and sporadic interrupts can push latencies past deadlines.
+
+A frequent blind spot is jitter—variance in release and finish times of periodic activities. Jitter accumulates through the pipeline, triggering queues and combined misses. Countermeasures include fixed-priority preemptive scheduling (FPPS) with priority inheritance to bound blocking, and integrating periodic servers for aperiodic tasks so core stages are not starved.
+
+Runtimes contribute overhead. Managed environments may suffer GC pauses; dynamic allocation and syscalls add non-determinism. Systems programmed in Rust eschew stop-the-world collection and enforce memory safety, improving predictability. Even so, contention, I/O variation, and interrupts must be instrumented and controlled.
+
+Trustworthy monitors demand continuous measurement and validation. Teams should record execution and response time distributions per task, inspect high-percentile tails (p99/p999), and verify schedulability under synthetic and real workloads. Thresholds should evolve based on empirical data, but safeguards must prevent regressions as features are added. The aim is sustained, demonstrable timing guarantees across releases and deployments.
