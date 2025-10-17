@@ -15,4 +15,15 @@ Rails.application.configure do
   config.active_support.report_deprecations = false
 
   config.force_ssl = false
+
+  # Allow requests from Docker host/bridge networks.
+  # Optionally restrict via ALLOWED_HOSTS env, comma-separated.
+  allowed = ENV.fetch('ALLOWED_HOSTS', '').split(/[,\s]+/).reject(&:empty?)
+  if allowed.any?
+    config.hosts.clear
+    allowed.each { |h| config.hosts << h }
+  else
+    # Fallback: allow all (suitable for local dev in container)
+    config.hosts.clear
+  end
 end

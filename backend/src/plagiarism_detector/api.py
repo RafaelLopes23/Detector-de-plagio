@@ -12,6 +12,25 @@ from plagiarism_detector.compare import (
 app = Flask(__name__)
 
 
+@app.route("/")
+def index():
+    return jsonify(
+        {
+            "service": "Plagiarism Detector API",                                                                                                                        
+            "version": "1.0",
+            "endpoints": {                                                                                                                                                                                                              
+                "compare": "/api/compare (POST)",
+                "health": "/health (GET)"
+            }
+        }
+    )
+
+
+@app.route("/health")
+def health():
+    return jsonify({"status": "healthy"}), 200
+
+
 @app.post("/api/compare")
 def compare_endpoint():
     payload = request.get_json(force=True, silent=False) or {}

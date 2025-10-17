@@ -34,4 +34,8 @@ EXPOSE 3000
 # Precompile assets if needed (no DB)
 RUN bundle exec rake assets:precompile || true
 
+# Add script to handle cleanup before starting
+RUN echo '#!/bin/sh\nrm -f tmp/pids/server.pid\nexec "$@"' > /app/entrypoint.sh && chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]

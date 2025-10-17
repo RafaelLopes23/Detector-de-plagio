@@ -7,7 +7,11 @@ threads min_threads_count, max_threads_count
 port ENV.fetch("PORT", 3000)
 environment ENV.fetch("RACK_ENV", "development")
 
-workers ENV.fetch("WEB_CONCURRENCY", 2).to_i
-preload_app!
+# Use workers only if WEB_CONCURRENCY > 0
+worker_count = ENV.fetch("WEB_CONCURRENCY", 0).to_i
+if worker_count > 0
+  workers worker_count
+  preload_app!
+end
 
 plugin :tmp_restart
